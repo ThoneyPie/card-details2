@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body> 
+<aside>
+  <div class="card_front card-front">
+    <div>
+    <img src="/images/bg-card-front.png" id="card_front_img">
+    <img src="/images/card-logo.svg" id="card-logo">
+    <p id="bottom-left-text">sadsaflkfskfasmf</p>
+    <p id="bottom-right-text">00/00</p>
+    <p id="center-text">sdfkjdsfsdkfjdskfjs</p>
+    
+    </div>
+    <div>
+    <img src="/images/bg-card-back.png" id="card_back_img">
+    <p id="cvc">cvc</p>
+    </div>
+  </div>
+</aside>
+<main>
+  <div class="form_container">
+    <form id="form">
+      <div class="form_content">
+        <label for="name" class='labels'>CARDHOLDER NAME</label>
+        <input type="text" id="name" placeholder="Jane AppleSeed" class="cardName" maxlength="25"></input>
+        <small class="error">error</small>
+      </div>
+
+      <div class="form_content">
+        <label for="name" class="labels">CARD NUMBER</label>
+        <input type="text" id="number" placeholder="0000 0000 0000 0000" class="cardNumber" maxlength="20"></input>
+        <small class="error">error</small>
+      </div>
+
+      <div class="form_content1 form_content">
+        <label for="name" class="labels">EXP. DATE(MM/YY)</label>
+        <div class="exp">
+        <input type="text" id="month" maxlength="2" size="3" class="month"></input>
+        <input type="text" id="year" maxlength="2" size="3" class="year"></input>
+        <input type="text" id="backNo" maxlength="3" size="3"></input>
+      </div>
+        <small class="error">error</small>
+      </div>
+
+      <div class="form_content">
+        
+        <button class="button" type="submit">Confirm</button>
+      
+      </div>
+    </form>
+  </div>
+</main>
+
+
+
+  <!--0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  <!-- Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>

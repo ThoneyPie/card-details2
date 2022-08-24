@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: 
+    'column column1';
+    grid-template-columns: 1fr 3fr;
+}
+
+aside, main{
+border: rgb(77, 29, 96) 1px solid;
+}
+aside{
+    grid-area: column;
+    background-image: url(/images/bg-main-desktop.png);
+}
+
+
+.card_front{
+    margin: 80px;
+}
+#card_front_img{
+    z-index: 1;
+    position: absolute;
+    width: 350px;
+        
+}
+#card-logo{
+    z-index: 3;
+    position: absolute;
+    width: 60px;
+    padding-top: 10px;
+    padding-left: 10px;
+        
+}
+
+#bottom-left-text{
+    z-index: 3;
+    position: absolute;
+    padding-top: 170px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+#bottom-right-text{
+    z-index: 3;
+    position: absolute;
+    padding-top: 170px;
+    padding-left: 270px;
+    padding-right: 10px;
+    color: white;
+}
+
+#center-text{
+    z-index: 3;
+    position: absolute;
+    padding-top: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+
+
+#card_back_img{
+    
+    position: absolute;
+    width: 350px;
+    padding-top: 220px;
+    margin-left: 100px;    
+}
+
+p#cvc{
+    position: absolute;
+    z-index: 4;margin-top: 300px;
+    margin-left: 350px;
+    color: white;
+}
+/*end of aside container */
+
+/*start of main container */
+
+
+main{
+    grid-area: column1;
+    padding:20px;
+}
+
+form{
+    margin-left: 400px;     /* sets the margin of the form, should be reduced on smaller devices for the sake of responsiveness. */ 
+    margin-top: 120px;
+    max-width: 300px;
+}
+
+.form_content{
+    margin: 20px;
+    display: grid;
+}
+
+.labels{
+    font-size: 12px;
+}
+
+input[type='text']{
+margin: 5px;
+border-radius: 4px;
+padding: 6px;
+}
+
+
+
+.exp{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+button{
+    margin: 6px;
+    border-radius: 4px;
+    padding: 7px;
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+    }
+
+
+/* end of main container. */
+
+/*responsiveness, heaves a sigh */
+
+
+
+
