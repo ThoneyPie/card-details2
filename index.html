@@ -22,7 +22,7 @@
     <img src="/images/bg-card-front.png" id="card_front_img">
     <img src="/images/card-logo.svg" id="card-logo">
     <p id="bottom-left-text">sadsaflkfskfasmf</p>
-    <p id="bottom-right-text">00/00</p>
+    <p id="bottom-right-text"><span id="leftside">00/</span><span id="rytside">00</span></p>
     <p id="center-text">sdfkjdsfsdkfjdskfjs</p>
     
     </div>
@@ -50,8 +50,8 @@
       <div class="form_content1 form_content">
         <label for="name" class="labels">EXP. DATE(MM/YY)</label>
         <div class="exp">
-        <input type="text" id="month" maxlength="2" size="3" class="month"></input>
-        <input type="text" id="year" maxlength="2" size="3" class="year"></input>
+        <input type="text" id="month" maxlength="2" size="3" class="date"></input>
+        <input type="text" id="year" maxlength="2" size="3" class="date"></input>
         <input type="text" id="backNo" maxlength="3" size="3"></input>
       </div>
         <small class="error">error</small>
@@ -59,7 +59,7 @@
 
       <div class="form_content">
         
-        <button class="button" type="submit">Confirm</button>
+        <button class="button" id="button" type="submit">Confirm</button>
       
       </div>
     </form>
@@ -68,28 +68,11 @@
 
 
 
-  <!--0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
+  
+<!--
   Confirm
 
-  <!-- Completed state start
+   Completed state start
 
   Thank you!
   We've added your card details
@@ -99,5 +82,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>-->
+<script src='/script.js'></script>
 </body>
+
 </html>
